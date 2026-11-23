@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Little Lotus · Myanmar sounds</title><link rel="stylesheet" href="styles.css"></head>
+<body><header><a class="brand" href="./"><span class="logo">✳</span> Little Lotus <small>MYANMAR READING</small></a><span class="tag">One sound at a time</span></header>
+<main><section class="intro"><span class="eyebrow">YOUR FIRST STEPS IN MYANMAR</span><h1>Small letters.<br>A whole new <em>world.</em></h1><p>Listen closely. Find the letter.<br>Build your reading confidence, one sound at a time.</p><div class="flower" aria-hidden="true">က<span>ခ</span><i>င</i></div>
+</section>
+<section class="workspace"><nav aria-label="Activities"><button id="quizTab" class="active">01 &nbsp; Sound quiz</button><button id="exploreTab">02 &nbsp; Explore letters</button><button id="recordTab">03 &nbsp; Record missing sounds</button><button id="gamesTab">04 &nbsp; Games</button></nav>
+<div id="quiz"><div class="topline"><span id="round">LET’S BEGIN</span><span id="score">0 correct</span></div><progress id="progress" max="10" value="0" aria-label="Quiz progress"></progress><div id="setup"><h2>Which letter do you hear?</h2><p>Play a sound, then choose a matching letter.<br>No timer. Listen as often as you like.</p><label for="scope">Practice set</label><select id="scope"><option value="all" selected>All 33 letters</option><option value="aa">က ကာ ကား · 87 forms</option><option value="i">ကိ ကီ ကီး · 78 forms</option><option value="first">First five · က ခ ဂ ဃ င</option></select><p id="quizStatus" role="status">Loading your saved sounds…</p><button id="start" class="primary" disabled>Start listening <span>→</span></button><p class="fine">Every letter once · Your saved recordings work offline</p></div><div id="question" hidden><h2>Listen. Which letter matches?</h2><button id="play" class="listen" aria-label="Play letter sound"><span>♪</span> Play sound</button><p id="audioStatus" role="status">Play the sound to unlock the answers.</p><div id="choices" class="choices"></div><p id="feedback" role="status"></p><button id="next" class="primary" hidden>Next sound →</button><button id="exit" class="text-button">Back to practice sets</button></div><div id="results" hidden><span class="result-icon">✳</span><h2>Lovely listening!</h2><p id="summary"></p><div id="review"></div><button id="retry" class="primary">Practice missed sounds</button><button id="again" class="text-button">Start a fresh quiz</button></div></div>
+<div id="explore" hidden><div class="eyebrow">MEET THE ALPHABET</div><h2>Tap a letter. Hear its sound.</h2><p>Your saved reading sounds play here and in the quiz.</p><label for="exploreSet">Lesson</label><select id="exploreSet"><option value="alphabet">Basic alphabet · 33 letters</option><option value="aa">က ကာ ကား</option><option value="i">ကိ ကီ ကီး</option></select><div id="alphabet" class="alphabet"></div><p id="exploreStatus" role="status"></p></div>
+<div id="games" hidden>
+<div id="gamesGallery">
+<div class="eyebrow">LEARN THROUGH PLAY</div><h2>Choose a game</h2>
+<ul class="game-gallery" aria-label="Games">
+<li class="game-tile">
+<button id="openMemoryGame" class="game-picture" type="button" aria-label="Open Memory match"><img src="assets/memory-match.svg" width="480" height="320" alt="Illustrated memory cards with a matching pair of Myanmar letters"></button>
+<div class="game-caption"><h3>Memory match</h3><p>Find matching letters and hear their sounds. Play with the alphabet, vowel forms, or both.</p></div>
+</li>
+<li class="game-tile">
+<button id="openFlappyGame" class="game-picture" type="button" aria-label="Open Flappy Bird"><img src="assets/flappy-bird.svg" width="480" height="320" alt="A golden bird flying between green poles"></button>
+<div class="game-caption"><h3>Flappy Bird</h3><p>Read the word, listen to three sound cards, and choose its sound to fly through the poles.</p></div>
+</li>
+</ul>
+</div>
+<div id="memoryGame" hidden>
+<button id="backToGames" class="text-button" type="button">← All games</button>
+<div class="eyebrow">PLAY AND REMEMBER</div><h2 id="memoryHeading" tabindex="-1">Memory match</h2>
+<p>Flip two cards to find the same written form. Hear your recording each time you turn a card over.</p>
+<fieldset class="memory-sets"><legend>Choose your practice groups</legend>
+<p>Pick one, two, or all three.</p>
+<label><input id="memoryAlphabet" type="checkbox" checked><span>Basic alphabet <small lang="my">က ခ ဂ · 33 letters</small></span></label>
+<label><input id="memoryAA" type="checkbox"><span>ရေးချ / မောက်ချ <small lang="my">ကာ ကား · ခါ ခါး</small></span></label>
+<label><input id="memoryI" type="checkbox"><span>လုံးကြီးတင် / လုံးကြီးတင်ဆန်ခတ် <small lang="my">ကိ ကီ ကီး</small></span></label>
+</fieldset>
+<p id="memorySelectionStatus" role="status">Choose your groups, then start a game.</p>
+<button id="memoryStart" class="primary">Start memory game <span>→</span></button>
+<div id="memoryRound" hidden>
+<div class="memory-stats"><span id="memoryPairs">0 of 6 pairs</span><span id="memoryTurns">0 turns</span></div>
+<div id="memoryBoard" class="memory-board" role="group" aria-label="Memory cards"></div>
+<p id="memoryStatus" role="status">Flip a card to begin.</p>
+<p id="memoryAudioStatus" role="status"></p>
+</div>
+</div>
+<div id="flappyGame" hidden>
+<button id="flappyBack" class="text-button" type="button">← All games</button>
+<div class="eyebrow">LISTEN, CHOOSE, AND SOAR</div><h2 id="flappyHeading" tabindex="-1">Flappy Bird</h2>
+<p class="flappy-intro">Read the word at the top. Play the three sound cards, then choose the matching sound. A correct choice helps your bird dodge a pole!</p>
+<div class="flappy-settings">
+<div><label for="flappySet">Practice</label><select id="flappySet"><option value="words">Simple words</option><option value="alphabet">Basic alphabet</option><option value="aa">က ကာ ကား</option><option value="i">ကိ ကီ ကီး</option></select></div>
+</div>
+<div class="flappy-prompt"><span>FIND ITS SOUND</span><strong id="flappyWord" lang="my">ကား</strong><span id="flappyScore">0 of 10 poles</span></div>
+<svg id="flappyScene" class="flappy-scene" viewBox="0 0 480 300" role="img" aria-label="Bird waiting to fly through the poles">
+<rect width="480" height="300" fill="#e2f3f3"/>
+<defs><pattern id="flappyGround" width="24" height="20" patternUnits="userSpaceOnUse"><rect width="24" height="20" fill="#abc48e"/><path d="M0 4h10" stroke="#8fac73" stroke-width="3"/></pattern></defs>
+<g id="flappyClouds" fill="#fff" opacity=".85"><g><ellipse cx="85" cy="50" rx="48" ry="13"/><ellipse cx="70" cy="42" rx="20" ry="17"/><ellipse cx="310" cy="66" rx="62" ry="15"/><ellipse cx="326" cy="55" rx="27" ry="22"/></g><g transform="translate(480 0)"><ellipse cx="85" cy="50" rx="48" ry="13"/><ellipse cx="70" cy="42" rx="20" ry="17"/><ellipse cx="310" cy="66" rx="62" ry="15"/><ellipse cx="326" cy="55" rx="27" ry="22"/></g></g>
+<path d="M0 263 Q65 218 128 261 T260 258 T400 250 T520 256 V300 H0Z" fill="#c8deb2"/>
+<g id="flappyPoles" fill="#4f8754" stroke="#286c53" stroke-width="2"></g>
+<g id="flappyBird" transform="translate(88 165)"><ellipse rx="22" ry="18" fill="#e9b64d"/><ellipse id="flappyWing" cx="-8" cy="7" rx="13" ry="8" fill="#d49136"/><circle cx="10" cy="-5" r="7" fill="#fffdf6"/><circle cx="12" cy="-5" r="3" fill="#263e38"/><path d="M20 0 L34 5 L20 10Z" fill="#c87842"/></g>
+<rect y="280" width="480" height="20" fill="url(#flappyGround)"/>
+</svg>
+<p id="flappyStatus" role="status">Press Start to begin. Clear 10 poles!</p>
+<div id="flappyChoices" class="flappy-sounds" role="group" aria-label="Three sound choices" hidden></div>
+<p id="flappyAudioStatus" class="flappy-note" role="status"></p>
+<div class="flappy-actions"><button id="flappyStart" class="primary" type="button">Start →</button><button id="flappyStop" class="text-button" type="button" disabled>Stop game</button></div>
+</div>
+</div>
+<div id="record" hidden>
+<div class="eyebrow">YOUR VOICE · LESSON AUDIO</div><h2>Record the missing sounds.</h2>
+<p id="recordInstructions">Record ကိ၊ ကီ၊ ကီး, then the same three forms for each included consonant. Say the syllable, without naming the signs. Your existing recordings are kept.</p>
+<label for="recordSet">Recording set</label><select id="recordSet"><option value="i" selected>Next lesson · ကိ ကီ ကီး · 78 sounds</option><option value="aa">က ကာ ကား · 87 forms</option><option value="alphabet">Basic alphabet · 33 letters</option></select>
+<label class="record-filter"><input id="recordMissing" type="checkbox" checked> Show only sounds that need recording</label>
+<p id="recordCount" role="status">Loading saved recordings…</p>
+<div id="recordLetter" class="record-letter" lang="my"></div><p id="recordPosition" class="fine"></p>
+<button id="recordStart" class="primary" disabled>Record</button>
+<button id="recordStop" class="primary" hidden>Stop recording</button>
+<audio id="recordPreview" controls hidden aria-label="Preview your recording"></audio>
+<button id="recordSave" class="primary" disabled>Save & next letter →</button>
+<div class="record-navigation"><button id="recordPrevious" class="text-button">← Previous</button><button id="recordNext" class="text-button">Next →</button></div>
+<p id="recordStatus" role="status">Allow microphone access when asked. Recordings stay in this browser on this device.</p>
+<button id="recordExport" class="text-button" disabled>Download recording backup</button>
+<label for="recordImport">Restore a recording backup</label><input id="recordImport" type="file" accept="application/json,.json">
+<p class="fine">Download a backup before clearing browser data or switching devices. Microphone recording needs localhost or HTTPS.</p>
+</div></section>
+<aside><span>✦</span><p><strong>Different letters can share a sound.</strong> The sound quiz accepts letters that share a sound. In Memory match, find two cards with the same written form.</p></aside>
+<footer><span>Made for little moments of learning.</span><details><summary>Audio notes</summary><p>Native-speaker recordings provided by Tricia Lee are bundled with this app. New recordings saved in this browser take priority. Download a recording backup to keep any replacements. The selected lesson scope omits add-on forms for ဃ၊ ဋ၊ ဌ၊ ဍ၊ ဎ၊ ဠ.</p></details></footer></main><script src="recordings/bundled-recordings.js"></script><script src="app.js"></script><script src="flappy.js"></script></body></html>

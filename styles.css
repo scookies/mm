@@ -1,0 +1,49 @@
+:root{--ink:#263e38;--muted:#6e7e75;--green:#286c53;--paper:#faf8f1;--line:#e1e5db}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 system-ui,-apple-system,sans-serif}button,select{font:inherit}button,a,select{-webkit-tap-highlight-color:transparent}button{cursor:pointer}button:disabled{cursor:default;opacity:.55}button:focus-visible,a:focus-visible,select:focus-visible{outline:3px solid #d39137;outline-offset:4px}header{max-width:1160px;margin:auto;padding:28px 32px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink);font-weight:750;font-size:21px}.brand small{font-size:9px;letter-spacing:2px;border-left:1px solid #ccd6c9;padding-left:14px;margin-left:6px}.logo{color:var(--green);font-size:38px}.tag{font-size:12px;color:var(--muted)}main{max-width:1100px;margin:auto;padding:54px 32px 20px;display:grid;grid-template-columns:1fr 1.15fr;gap:25px 65px}.intro{padding-top:36px;position:relative}.eyebrow{font-size:10px;font-weight:750;letter-spacing:2.2px;color:var(--green)}h1{font:normal clamp(42px,5vw,65px)/1.12 Georgia,serif;letter-spacing:-2px;margin:22px 0}h1 em{color:var(--green)}p{color:var(--muted)}.intro p{font-size:16px}.flower{background:#e5ebdc;color:#62816b;width:140px;height:140px;display:grid;place-items:center;border-radius:45% 55% 48% 52%;font-size:78px;margin:42px 0 0 28px;transform:rotate(-9deg)}.flower span{position:absolute;right:-35px;top:-20px;background:#f0d8bd;border:7px solid var(--paper);border-radius:50%;width:80px;height:80px;display:grid;place-items:center;font-size:38px;transform:rotate(20deg)}.flower i{position:absolute;left:-28px;bottom:-12px;width:55px;height:55px;border-radius:50%;background:#f2e7b9;font-size:30px;font-style:normal;text-align:center}.workspace{background:white;border:1px solid var(--line);border-radius:22px;padding:12px 28px 28px;box-shadow:0 14px 40px #263e3806;min-height:540px}nav{display:flex;gap:22px;border-bottom:1px solid var(--line);margin-bottom:26px}nav button{border:0;background:none;color:var(--muted);padding:13px 0;font-size:12px;border-bottom:2px solid transparent}nav .active{color:var(--green);border-color:var(--green);font-weight:750}.topline{display:flex;justify-content:space-between;font-size:10px;letter-spacing:1px;color:var(--muted)}progress{width:100%;height:5px;accent-color:var(--green);margin:12px 0 18px;border:0}progress::-webkit-progress-bar{background:#eef1e8;border-radius:10px}progress::-webkit-progress-value{background:var(--green);border-radius:10px}h2{font:normal 27px/1.3 Georgia,serif;margin:16px 0 10px}#setup p{font-size:14px}label{display:block;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-top:30px}select{width:100%;padding:12px;border:1px solid var(--line);border-radius:9px;background:#fbfcf8;color:var(--ink);margin:9px 0 16px}.primary{display:flex;justify-content:space-between;align-items:center;width:100%;border:0;border-radius:10px;padding:14px 20px;background:var(--green);color:white;font-weight:650;font-size:14px}.primary:hover{background:#1f573f}.fine{font-size:10px!important;text-align:center;margin-top:17px!important}.listen{display:flex;align-items:center;justify-content:center;gap:12px;width:100%;background:#edf3e9;border:1px solid #cfddc7;border-radius:14px;padding:18px;color:var(--green);font-weight:650;margin-top:25px}.listen span{font-size:30px}.choices{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:22px}.choices button,.alphabet button{border:1px solid #dce3d6;background:#fcfcf8;border-radius:12px;color:var(--ink);font-family:'Myanmar Sangam MN','Myanmar Text','Noto Sans Myanmar',sans-serif}.choices button{font-size:45px;min-height:95px}.choices button.correct{background:#e1f1df;border:2px solid #4f8754;opacity:1}.choices button.wrong{background:#fff0e5;border:2px solid #c17f50;opacity:1}#feedback{min-height:30px;color:var(--green);font-size:14px}#audioStatus,#exploreStatus{font-size:12px;min-height:20px}.text-button{border:0;background:none;color:var(--muted);padding:15px 0;font-size:12px}.alphabet{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin-top:20px}.alphabet button{font-size:28px;padding:9px 0}.alphabet button:hover{background:#e8f0df}#explore p{font-size:13px}.result-icon{font-size:60px;color:#bc8e3e}#review{font-size:30px;margin:20px 0}aside{grid-column:2;display:flex;gap:12px;align-items:start;padding:0 10px}aside span{color:#ba8d44}aside p{font-size:11px;margin:0}aside strong{color:var(--ink)}footer{grid-column:1/-1;border-top:1px solid var(--line);padding-top:24px;margin-top:20px;font-size:10px;color:var(--muted);display:flex;justify-content:space-between;gap:30px}details{max-width:470px}summary{cursor:pointer}a{color:var(--green)}[hidden]{display:none!important}@media(max-width:760px){header{padding:18px 22px}.brand small,.tag,.flower{display:none}main{padding:24px 20px;display:block}.intro{padding:0}.intro h1{font-size:42px;margin:14px 0}.intro h1 br{display:none}.intro p{font-size:14px;margin-bottom:24px}.workspace{padding:12px 20px 24px;min-height:520px}aside{margin:20px 0}footer{display:block}details{margin-top:15px}.choices button{font-size:38px}.choices{gap:7px}}
+
+.record-letter{font-family:'Myanmar Sangam MN','Myanmar Text','Noto Sans Myanmar',sans-serif;font-size:100px;text-align:center;padding:12px;background:#f5f8ef;border-radius:16px}.record-navigation{display:flex;justify-content:space-between}#recordPreview{width:100%;margin:18px 0}#recordSave{margin-top:12px}#recordStatus,#recordCount{font-size:13px}#recordImport{max-width:100%;font-size:12px}nav{gap:16px}nav button{flex:1}#recordStop{background:#a33f38}
+
+.memory-sets{border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:24px 0 12px;min-width:0}
+.game-gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr));gap:20px;padding:0;margin:24px 0;list-style:none}
+.game-tile{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fcfcf8}
+.game-picture{display:block;width:100%;padding:0;border:0;background:#eaf1e4;overflow:hidden}
+.game-picture img{display:block;width:100%;height:auto;transition:transform .2s ease}
+.game-picture:hover img{transform:scale(1.035)}
+.game-picture:focus-visible{outline-offset:-5px}
+.game-caption{padding:18px 20px 20px}
+.game-caption h3{font:normal 23px/1.3 Georgia,serif;margin:0 0 8px;color:var(--ink)}
+.game-caption p{font-size:13px;margin:0}
+#backToGames{padding-top:0;color:var(--green)}
+#memoryGame>p{font-size:13px}
+@media(prefers-reduced-motion:reduce){.game-picture img{transition:none}.game-picture:hover img{transform:none}}
+.memory-sets legend{font-size:13px;font-weight:650;padding:0 6px}
+.memory-sets p{font-size:12px;margin:0 0 10px}
+.memory-sets label{display:flex;gap:12px;align-items:center;margin:0;padding:10px 0;text-transform:none;letter-spacing:0;font-size:14px;cursor:pointer;overflow-wrap:anywhere}
+.memory-sets input{width:19px;height:19px;flex-shrink:0;accent-color:var(--green)}
+.memory-sets input:focus-visible{outline:3px solid #d39137;outline-offset:3px}
+.memory-sets small{display:block;color:var(--muted);font-size:16px;margin-top:3px}
+#games>p,#memorySelectionStatus,#memoryStatus,#memoryAudioStatus{font-size:13px}
+.memory-stats{display:flex;justify-content:space-between;margin:24px 0 14px;font-size:12px;color:var(--green);font-weight:650}
+.memory-board{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px}
+.memory-card{min-height:94px;border:1px solid #cfddc7;border-radius:12px;background:#edf3e9;color:var(--green);font-size:34px;padding:8px 2px}
+.memory-card:hover{background:#e2ebdc}
+.memory-card.revealed{background:#fcfcf8;color:var(--ink);font-family:'Myanmar Sangam MN','Myanmar Text','Noto Sans Myanmar',sans-serif;font-size:32px}
+.memory-card.matched{background:#e1f1df;border:2px solid #4f8754;opacity:1}
+#memoryAudioStatus{min-height:22px;color:var(--muted)}
+.flappy-settings{display:grid;grid-template-columns:1fr;margin-bottom:16px}
+.flappy-settings label{margin-top:15px}.flappy-settings select{font-size:13px;margin-bottom:0}
+.flappy-intro,.flappy-note,#flappyStatus{font-size:13px}.flappy-note{font-size:11px;line-height:1.6}
+#flappyBack{padding-top:0;color:var(--green)}
+.flappy-prompt{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 16px;background:#fbf5e6;border:1px solid #ede2c3;border-radius:14px 14px 0 0}
+.flappy-prompt>span{font-size:10px;color:var(--green);font-weight:650;max-width:75px}
+#flappyWord{font-family:'Myanmar Sangam MN','Myanmar Text','Noto Sans Myanmar',sans-serif;font-size:40px;font-weight:400;line-height:1.8}
+.flappy-scene{display:block;width:100%;height:auto;border:1px solid #d1e4dc;border-top:0;border-radius:0 0 14px 14px}
+.flappy-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.flappy-actions .primary{flex:1;width:auto;min-width:100px}.flappy-actions .text-button{padding:10px 0}
+.flappy-sounds{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:18px 0 10px}
+.flappy-sound-card{display:grid;gap:10px;background:#f5f8ef;border:1px solid #d7e2ce;border-radius:12px;padding:12px 8px}
+.flappy-sound-card button{width:100%;border:0;border-radius:8px;padding:12px 3px;color:var(--green);font-size:13px}
+.flappy-sound-play{background:#e4eedc;font-weight:650;min-height:66px}
+.flappy-sound-choose{background:white;border:1px solid #d7e2ce!important;font-size:12px!important}
+.flappy-sound-card.correct{background:#e1f1df;border:2px solid #4f8754}
+.flappy-sound-card.wrong{background:#fff0e5;border-color:#c17f50}
+#flappyAudioStatus{min-height:18px}
+@media(max-width:760px){nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 16px}.memory-board{grid-template-columns:repeat(3,minmax(0,1fr))}.memory-card{min-height:90px}}
